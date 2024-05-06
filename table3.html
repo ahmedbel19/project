@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background-color: rgb(80, 132, 156);
+
+
+        }
+        table {
+            background-color: skyblue;
+            border: none;
+            margin: auto;
+            padding: 15px;
+            width: 50%;
+
+        }
+
+        .hbb {
+            text-decoration: none;
+            
+            display: block;
+            background-color: rgba(234, 130, 238, 0.623);
+            margin: 0 50px;
+            text-align: center;
+            padding: 8px 8px;
+            border-radius: 20px;
+        }
+        .abb img{
+            display: block;
+            margin: auto;
+            width: 250px;
+            
+        }
+    </style>
+    <script>
+        function validation_login() {
+            var a = document.getElementById("email").value;
+            var b = document.getElementById("password").value;
+            if (a=="" && b==""){
+                alert("please entre email and password");
+            }
+            else if (a==""){
+                alert("please entre email");
+            }
+            else{
+                alert("please entre password")
+            }
+
+            
+        }
+    </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Welcome</h1>
+    <form>
+        <table width="35%" style="height: auto;">
+            <tr>
+                <td class="abb" colspan="2"><img src="images/Login.png"></td>
+
+            </tr>
+            <tr>
+                <td style="font-size:large;font-family: Arial, Helvetica, sans-serif;">E-mail : </td>
+                <td style="text-align: center;"><input type="email" placeholder="ex:....@gmail.com" id="email"></td>
+
+
+            </tr>
+            <tr>
+                <td><label for="ba" style="font-size:large; font-family: Arial, Helvetica, sans-serif;"> Mot de passe
+                        :</label> </td>
+                <td style="text-align: center;"><input type="password" id="password"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input onclick="validation_login();" type="submit" value="Envoyer"><span> </span><input type="reset"
+                        value="Effacer" required></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td class="hbb "><a target="_blank" href="table4.html">S'inscrire</a></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+        </table>
+
+
+
+
+    </form>
+    
+</body>
+
+</html>

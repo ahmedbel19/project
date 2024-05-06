@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S'inscrire</title>
+   <style>
+      table{
+            background-color: skyblue;
+            border: none;
+            margin: auto;
+        }
+        .centre{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+          font-size: medium; 
+         
+
+        }
+        body{
+            background-color: rgb(80, 132, 156);
+
+
+        }
+   </style>
+</head>
+<body>
+    
+
+
+    <table style="width: 90%; border-collapse: collapse;">
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <img src="images/welcome_img.jpg" width="200px" alt=""></td>
+        </tr>
+                <tr>
+                    <td class="centre " > Nom : </td>
+                    <td><input type="name" id="hmed"></td>
+                </tr>
+                <tr>
+                    <td  class="centre ">prenom : </td>
+                    <td><input type="name" id="hmed"></td>
+                </tr>
+                <tr>
+                    <td  class="centre ">Age : </td>
+                    <td><input type="number" id="" required></td>
+                </tr>
+                <tr>
+                    <td  class="centre ">Wilaya : </td>
+                    <td>
+                        <select>
+                        <option value="19">Setif</option>
+                        <option value="16">Alger</option>
+                        <option value="31">Oran</option>
+                        <option value="05">Batna</option>
+                        <option>Biskra </option>
+                        <option>Constantine</option>
+                        <option>Skikda</option>
+                        <option>Bouira</option>
+                        <option>Annaba</option>
+                        <option>Galma</option>
+                        <option>Telmcen</option>
+                        <option>Bejaia</option>
+                        <option>Djelfa</option>
+
+
+
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td  class="centre ">telephone : </td>
+                    <td><input type="tel" id="" required></td>
+                </tr>
+                <tr>
+                    <td class="centre ">email : </td>
+                    <td><input type="email" id="ronda" required></td>
+
+                </tr>
+                <tr>
+                    <td  class="centre ">Adresse : </td>
+                    <td><input type="text" id="" required></td>
+                </tr>
+                <tr>
+                    <td  class="centre ">Mot de passe : </td>
+                    <td><input type="password" id="" required 
+                         minlength="6" maxlength="10" ></td>
+
+                </tr>
+                <tr>
+                    <td  class="centre ">Confirmer le mot de passe </td>
+                    <td><input type="password" 
+                         required
+                          minlength="6" maxlength="10" ></td>
+                </tr>
+                <tr>
+                    <td  class="centre ">Sex : </td>
+                    <td><label for="HH">Homme</label>
+                        <input type="radio" id="HH" value="Homme"  name="Sex" >
+                       <label  for="gh" >Femme</label>
+
+                    <input type="radio" id="gh" value="Femme" name="Sex">
+                </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><form><input type="submit" value="Envoyer" required><span> 
+                         </span><input type="reset"
+                          value="Effacer" required >
+                        </form></td>
+
+
+
+
+
+
+
+
+    </table>
+   
+
+
+    
+    
+</body>
+</html>
